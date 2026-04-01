@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>Astrolab</title>
+</head>
+<style>
+    body {
+        background-image: url('purple-space.jpg');
+        background-size:cover;       
+        background-position: center;  
+        background-repeat: no-repeat; 
+        }
+    p{font-family:'Sofia', sans-serif;
+        color:aliceblue;
+        text-align: center;
+        margin: 50px;}
+    .p1{color: aliceblue; font-size: 175px;}
+    .button1{display: block;
+             margin-top:20px ;
+             margin-left: auto;
+             margin-right: auto;
+             background: rgba(146, 3, 255, 0.984);
+             color: rgb(248, 247, 249);
+             border-radius: 100px;
+             cursor: pointer;
+             border: 2px solid aliceblue;
+             padding: 15px 40px;
+             font-size: large;
+             transition: 0.3s;}
+    h1{margin-left: auto;
+       margin-right:auto;
+       margin-top:auto;
+       margin-bottom:auto;
+       text-align: center;
+       color:mediumpurple;
+       }
+    </style>
+<body>
+    <div id="homescreen">
+    <p class= "p1">
+    Astrolab
+    </p>
+    <p style="font-size: 30px; text-align:center;">
+    a learning platform
+    </p>
+    <button class="button1" onclick="start()">
+    Enter the Astrolab
+    </button>
+    </div>
+    <div id="labscreen1" style="display: none;">
+    <h1>The Solar System is loading...</h1>
+    <p> Welcome to the Solar System</p>
+    </div>
+    <script>
+    function start(){
+        document.getElementById('homescreen').style.display = 'none'
+        document.getElementById('labscreen1').style.display = 'block'
+    }
+    </script>
+</body>
+</html>
+
+
